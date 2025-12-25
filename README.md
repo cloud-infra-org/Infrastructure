@@ -1,65 +1,43 @@
 # Infrastructure Repository
 
-This repository defines the cloud infrastructure required to run our applications.
-It controls how environments are created, secured, and kept available.
-
-Changes here directly affect system stability and access.
-
----
-
 ## What This Repository Is For
-
-This repository is used to:
-- Define shared platform resources used by applications
-- Control configuration that affects availability and security
-
-If infrastructure exists in the cloud, it should be defined here.
-
----
+This repository defines shared infrastructure used by applications.
+It describes networks, compute boundaries, and base platform setup.
+The purpose is to provide stable foundations for running services.
 
 ## What Type of Changes Are Allowed
-
-Allowed changes include:
-- Adding or updating infrastructure definitions
-- Environment-specific configuration updates
-- Improving reliability, security, or scalability
-- Fixing infrastructure-related issues
-
-All changes must go through a pull request.
-
----
+Updates that improve stability or reliability.
+Changes that support new application requirements.
+Improvements that reduce cost or operational risk.
+Documentation updates related to infrastructure behavior.
 
 ## What Changes Are NOT Allowed
-
-The following are not allowed:
-- Manual changes directly in the cloud
-- Committing secrets or credentials
-- Application code or deployment logic
-- Emergency fixes without follow-up documentation
-
-These changes create drift and hidden failures.
-
----
+Application business logic changes.
+Release or delivery flow changes.
+Temporary fixes that bypass safety controls.
+Unreviewed changes that affect all environments.
 
 ## Who Owns This Repository
+This repository is owned by the platform infrastructure team.
+They review and approve all changes.
+They are responsible for environment health.
 
-This repository is owned by the Infrastructure and Platform team.
-They are responsible for reviews, approvals, and safe execution of changes.
+## What Happens When Things Fail
+Applications may become unavailable or slow.
+New environments may fail to come up.
+Teams may be blocked from releasing changes.
 
----
+## How Rollback or Recovery Works
+Problematic changes should be reverted quickly.
+Previous stable infrastructure state should be restored.
+Recovery focuses on restoring service first, then fixing the cause.
 
-## One Realistic Risk If Misused
+## Who Is Impacted by Failure
+Application teams may be unable to deploy or operate services.
+End users may experience outages or degraded performance.
+Support teams may receive increased incidents.
 
-A small configuration mistake can remove network access or reduce capacity,
-causing multiple applications to go down at the same time.
-Recovery may take hours and may require manual intervention.
-
----
-
-## Acceptance Criteria
-
-A change is acceptable only if:
-- It has a clear purpose and impact description
-- It is reviewed and approved
-- It is tested in non-production first
-- It does not break existing environments
+## Risk If Misused
+If unsafe changes are applied without review,
+shared environments can be disrupted.
+This may cause outages affecting multiple applications at once.
