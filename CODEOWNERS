@@ -1,1 +1,14 @@
-# placeholder
+# CODEOWNERS file for Infrastructure Repository
+# This file defines who must review changes before they are merged
+
+# Rule 1: Default owners for the whole repository
+# If no specific rule matches, these owners will review the change
+* @infra-owner @infra-backup
+
+# Rule 2: Core infrastructure configuration
+# Changes that affect shared or base infrastructure setup
+/config/ @infra-owner
+
+# Rule 3: Environment-related files
+# Files that belong to different environments such as dev or production
+/environments/ @env-owner
