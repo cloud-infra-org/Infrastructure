@@ -1,1 +1,19 @@
-# placeholder
+# Ignore local state and temporary files
+# These files are created on your machine and should not be shared
+*.tmp
+*.bak
+
+# Ignore local environment override files
+# These files may contain local or sensitive values
+.env
+.env.*
+
+# Ignore local cache and working directories
+# These are created during local testing
+.cache/
+.local/
+
+# Ignore operating system files
+# These files are created automatically by the OS
+.DS_Store
+Thumbs.db
