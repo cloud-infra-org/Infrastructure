@@ -1,1 +1,20 @@
+Apache License
+Version 2.0, January 2004
 
+Copyright (c) 2025 cloud-infra-org
+
+This repository contains infrastructure configuration and environment setup files.
+These files are licensed under the Apache License, Version 2.0.
+
+You are allowed to:
+- Use and modify the infrastructure files
+- Share changes within approved teams
+- Apply configurations to approved environments
+
+The following rules must be followed:
+1. You must keep this license and copyright notice with the files.
+2. Changes to shared environments must be reviewed and approved.
+3. These infrastructure files must not be used for unrelated systems without permission.
+
+The infrastructure is provided "as is", without warranties or guarantees.
+The organization is not responsible for failures caused by misuse or misconfiguration.
