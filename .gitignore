@@ -1,1 +1,23 @@
-# placeholder
+# Ignore local state and working files
+# These files track local infrastructure changes and should not be shared
+*.state
+*.lock
+.state/
+.lock/
+
+# Ignore local environment override files
+# These files contain environment-specific values
+.env
+.env.*
+env.local/
+
+# Ignore local cache and temporary folders
+# Created during local infrastructure testing
+.cache/
+.tmp/
+.local/
+
+# Ignore operating system files
+# Automatically created by the OS
+.DS_Store
+Thumbs.db
