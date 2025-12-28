@@ -18,7 +18,10 @@ We decided to keep **infrastructure code in a separate repository**.
 This makes it easier to manage infrastructure changes, apply strict access controls,
 and review changes carefully without affecting application code.
 
-## Risks
-- Managing multiple repositories can add some overhead.
-- Developers need to understand which repository to use.
-- Clear documentation is required to avoid confusion.
+
+### Risks and Trade-offs
+ Managing multiple repositories increases coordination effort.
+ Engineers must know which repository to use for each change.
+ Cross-repository changes may take more time to review.
+ Extra documentation is needed to avoid confusion.
+ Tooling and automation must be kept in sync across repositories.
