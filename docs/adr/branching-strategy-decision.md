@@ -16,13 +16,21 @@ We chose **GitFlow** as the branching strategy for this infrastructure repositor
 GitFlow provides clear branches for development, releases, and emergency fixes.
 It helps protect the production branch and makes changes easier to track and review.
 
-## Risks
-Here is a **simple 5–6 line description** you can add at the top of
+## Risks and trade-offs
+Here are **simple and clear “Risks and Trade-offs”** you can directly add to
 `docs/adr/repo-separation-decision.md`
-written in **plain English** and suitable for an **Infrastructure repository**:
+for an **Infrastructure repository**, written in **plain English**:
 
 ---
 
+### Risks and Trade-offs
+
+* Managing multiple repositories increases coordination effort.
+* Engineers must know which repository to use for each change.
+* Cross-repository changes may take more time to review.
+* Extra documentation is needed to avoid confusion.
+* Tooling and automation must be kept in sync across repositories.
+  
 ### Description
 
 This document explains why infrastructure code is kept in a separate repository.
