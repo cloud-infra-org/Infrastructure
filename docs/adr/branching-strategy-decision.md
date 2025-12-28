@@ -17,6 +17,17 @@ GitFlow provides clear branches for development, releases, and emergency fixes.
 It helps protect the production branch and makes changes easier to track and review.
 
 ## Risks
-- GitFlow has more branches, which can feel complex for new engineers.
-- Engineers must follow the process correctly.
-- Good documentation is required to avoid mistakes.
+Here is a **simple 5–6 line description** you can add at the top of
+`docs/adr/repo-separation-decision.md`
+written in **plain English** and suitable for an **Infrastructure repository**:
+
+---
+
+### Description
+
+This document explains why infrastructure code is kept in a separate repository.
+It helps new engineers understand the reason behind this decision.
+Separating repositories improves security and access control.
+It also makes reviews and changes easier to manage.
+This approach reduces risk to production infrastructure.
+It keeps infrastructure work clear and organized.
