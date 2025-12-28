@@ -19,9 +19,10 @@ This makes it easier to manage infrastructure changes, apply strict access contr
 and review changes carefully without affecting application code.
 
 
-### Risks and Trade-offs
- Managing multiple repositories increases coordination effort.
- Engineers must know which repository to use for each change.
- Cross-repository changes may take more time to review.
- Extra documentation is needed to avoid confusion.
- Tooling and automation must be kept in sync across repositories.
+## Risks and Trade-offs
+
+- Managing multiple repositories requires more coordination.
+- Engineers must clearly understand which repository to use.
+- Changes that span multiple repositories may take longer to review.
+- Additional documentation is needed to avoid confusion.
+- Tooling and automation must stay consistent across repositories.
