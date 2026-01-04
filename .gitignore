@@ -21,3 +21,30 @@ env.local/
 # Automatically created by the OS
 .DS_Store
 Thumbs.db
+
+# Terraform directories
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Terraform plan files
+*.tfplan
+
+# Crash logs
+crash.log
+
+# Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI config
+.terraformrc
+terraform.rc
+
+# OS files
+.DS_Store
+Thumbs.db
